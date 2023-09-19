@@ -1,5 +1,5 @@
 # Instagram_Clone
-An Instagram clone made with react.js
+An Instagram clone made with react.js and firebase
 It contains:
 1. Login/Signup
 2. Homepage

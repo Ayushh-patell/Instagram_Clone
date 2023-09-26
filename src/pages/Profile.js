@@ -36,6 +36,8 @@ export default function Profile() {
 
   const Update_user = async () => { 
     const userref = doc(db, "users", data.user_id);
+    const userPublicref = doc(db, "users_Public_data", data.user_id);
+    
     let bio = document.querySelector(".bio-box input").value;
     let name = document.querySelector(".name-box input").value;
     let username = document.querySelector(".Username-box input").value;
@@ -46,7 +48,13 @@ export default function Profile() {
       profile_pic: image,
       username: username,
     };
+    const user_data_2 = {
+      name: name,
+      profile_pic: image,
+      username: username,
+    };
     await updateDoc(userref, user_data);
+      await updateDoc(userPublicref, user_data_2);
     window.location.reload(true)
   };
 

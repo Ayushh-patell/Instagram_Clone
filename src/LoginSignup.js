@@ -88,6 +88,17 @@ export default function Login_Signup() {
               followers: 0,
               following: 0,
             });
+
+            const collection_ref_2 = doc(db, "users_Public_data", Current_user.user.uid);
+            await setDoc(collection_ref_2, { // add some data in a different collection which is public
+              username: user_name,
+              name: "",
+              followers: 0,
+              following: 0,
+              profile_pic:
+              "https://w7.pngwing.com/pngs/717/24/png-transparent-computer-icons-user-profile-user-account-avatar-heroes-silhouette-black.png"
+            })
+            
             document.querySelector(".lds-dual-ring").style.display = "none";
             console.log("New user Created");
             navigate("/HomePage");

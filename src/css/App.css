@@ -296,6 +296,46 @@ padding: 0.4rem !important;
   translate: 0 -50%;
   color: #fff;
 }
+.main_center .users_box {
+  width: 80%;
+  margin-top: 1rem;
+}
+.main_center .users_box p {
+  margin: 0;
+}
+.main_center .users_box .user {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #80808047;
+  border-radius: 150px;
+}
+.main_center .users_box .user .profile_img {
+  height: 100%;
+}
+.main_center .users_box .user .profile_img img {
+  height: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.main_center .users_box .user .names .userN{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.main_center .users_box .user .follow {
+  display: flex;
+  text-align: center;
+}
+.main_center .users_box .user .follow .follow_box{
+  margin: 0 1rem;
+}
+.main_center .users_box .user .follow .follow_box .value{
+  font-size: 2rem;
+  margin: 0;
+}
 
 /* AddPost page */
 
